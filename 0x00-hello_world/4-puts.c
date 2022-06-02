@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
- * C program that prints one senetence
- * followed by a line
+ * main - Entry point
  * Return: 0
- *
  */
 int main(void)
 {
