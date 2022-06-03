@@ -14,13 +14,12 @@ int main(void)
 	{
 		for (m = 0; m <= 9; m++)
 		{
-			for (x = n; x <= '9'; x++)
+			for (x = n + 1; x <= '9'; x++)
 			{
 				for (z = m + 1; z <= '9'; z++)
 				{
 					putchar(n + '0');
 					putchar(m + '0');
-					putchar(' ');
 					putchar(x + '0');
 					putchar(z + '0');
 
@@ -36,5 +35,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return (0);
+        return (0);
 }
