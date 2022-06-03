@@ -3,14 +3,10 @@
 #include <stdlib.h>
 
 /**
- *
  * main - Entry point
- *
- * Description: This program will assign a random number to the variable n
- * and print whether the number stored in the variable n is
- * positive or negative or zero. 
  * 
  * Return: 0
+ *
  */
 
 int main(void)
