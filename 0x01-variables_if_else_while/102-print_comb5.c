@@ -18,11 +18,11 @@ int main(void)
 			{
 				for (z = m + 1; z <= '9'; z++)
 				{
-					putchar(n);
-					putchar(m);
+					putchar(n + '0');
+					putchar(m + '0');
 					putchar(' ');
-					putchar(x);
-					putchar(z);
+					putchar(x + '0');
+					putchar(z + '0');
 
 					if (!((n == 9 && m == 8) && (x == 9 && z == 9)))
 					{
@@ -30,7 +30,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				z = 0;
+				z = '0';
 			}
 		}
 	}
