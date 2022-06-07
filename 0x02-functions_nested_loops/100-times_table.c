@@ -20,6 +20,8 @@ void print_times_table(int n)
 			_putchar('0');
 			for (x = 1; x <= n; x++)
 			{
+				_putchar(',');
+				_putchar(' ');
 				y = m * x;
 				if (y >= 100)
 				{
