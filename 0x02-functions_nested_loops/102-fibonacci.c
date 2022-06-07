@@ -8,7 +8,7 @@
 int main(void)
 {
 	int a;
-	long int n = 1, m = 2, p;
+	long int n = 1, m = 0, p;
 
 	for (a = 1; a <= 49; ++a)
 	{
