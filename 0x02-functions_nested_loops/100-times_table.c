@@ -17,7 +17,7 @@ void print_times_table(int n)
 	{
 		for (m = 0; m <= n; m++)
 		{
-			for (x = 0; x <= n; x++)
+			for (x = 1; x <= n; x++)
 			{
 				y = m * x;
 				if (m == 0)
