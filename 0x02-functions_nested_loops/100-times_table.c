@@ -26,11 +26,9 @@ void print_times_table(int n)
 					_putchar((y / 100) + '0');
 					_putchar((y / 10 % 10) + '0');
 				}
-				else if (x != 0)
+				else if (y <= 99)
 				{
 					_putchar(' ');
-					_putchar(' ');
-					_putchar(y + '0');
 				}
 				else if (y >= 10 && y < 100)
 				{
@@ -42,11 +40,6 @@ void print_times_table(int n)
 				{
 					_putchar(y + '0');
 				}
-			}
-			if (x != n)
-			{
-				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
