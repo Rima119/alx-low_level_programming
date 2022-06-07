@@ -7,9 +7,8 @@
  * Return: absolute value of @n
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n >= 0)
 	{
@@ -17,6 +16,6 @@ int _abs(int)
 	}
 	else
 	{
-		return (-n);
+		return (n * -1);
 	}
 }
