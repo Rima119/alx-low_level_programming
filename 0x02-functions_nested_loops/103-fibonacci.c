@@ -7,15 +7,16 @@
 
 int main(void)
 {
-	int n = 1, m, p = 0, a;
+	int n = 1, m = 2, p = 0, a;
 
-	for (m = 2; m < 4000000; m += n)
+	while (m < 4000000)
 	{
 		if (m % 2 == 0)
 		{
-			p += m;
+			p = p + m;
 		}
 		a = m;
+		m = m + n;
 		n = a;
 	}
 	printf("%d\n", p);
