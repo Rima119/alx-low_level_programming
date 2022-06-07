@@ -36,7 +36,7 @@ void print_times_table(int n)
 					_putchar((y / 10) + '0');
 					_putchar((y % 10) + '0');
 				}
-				else
+				else if (y <= 9)
 				{
 					_putchar(y + '0');
 				}
