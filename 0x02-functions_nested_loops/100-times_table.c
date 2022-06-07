@@ -9,13 +9,13 @@
 
 void print_times_table(int n)
 {
-	int m = 0;
+	int m;
 	int x;
 	int y;
 
 	if (n >= 0 && n <= 15)
 	{
-		while (m <= n)
+		for (m = 0; m <= n, m++)
 		{
 			for (x = 0; x <= n; x++)
 			{
@@ -54,6 +54,5 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
-		m++;
 	}
 }
