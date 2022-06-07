@@ -1,2 +1,2 @@
-#!/bin/bash
-Programming languages
+ Programming languages 
+learn programming in C
