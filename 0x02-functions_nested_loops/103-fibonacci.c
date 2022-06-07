@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int n = 1, m, p, a;
+	int n = 1, m, p = 0, a;
 
 	for (m = 2; m < 4000000; m += n)
 	{
