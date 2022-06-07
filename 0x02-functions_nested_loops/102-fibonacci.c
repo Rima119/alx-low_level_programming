@@ -17,7 +17,7 @@ int main(void)
 		n = m;
 		m = p;
 
-		if (a != 50)
+		if (a != 49)
 		{
 			printf(", ");
 		}
