@@ -8,9 +8,9 @@
 int main(void)
 {
 	int a;
-	long int n = 1, m = 0, p;
+	long int n = 0, m = 1, p;
 
-	for (a = 1; a <= 49; ++a)
+	for (a = 0; a < 50; a++)
 	{
 		p = m + n;
 		printf("%lu", p);
