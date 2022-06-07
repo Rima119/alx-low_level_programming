@@ -19,8 +19,6 @@ void print_times_table(int n)
 		{
 			_putchar(',');
 			_putchar(' ');
-			_putchar(' ');
-			_putchar('0');
 			for (x = 1; x <= n; x++)
 			{
 				y = m * x;
