@@ -10,7 +10,7 @@ int main(void)
 	int a;
 	long int n = 1, m = 1, p;
 
-	for (a = 0; a < 50; a++)
+	for (a = 0; a <= 50; a++)
 	{
 		p = m + n;
 		printf("%lu", p);
