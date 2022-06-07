@@ -12,6 +12,7 @@ void times_table(void)
 
 	for (n = 0; n < 10; n++)
 	{
+		_putchar(48);
 		for (m = 1; m < 10; m++)
 		{
 			x = n * m;
