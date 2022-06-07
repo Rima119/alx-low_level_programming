@@ -17,18 +17,14 @@ void print_times_table(int n)
 	{
 		for (m = 0; m <= n; m++)
 		{
+			_putchar('0');
 			for (x = 1; x <= n; x++)
 			{
 				y = m * x;
-				if (m == 0)
+				if (y >= 100)
 				{
-					_putchar(y + '0');
-				}
-				else if (y >= 100)
-				{
-					_putchar(y / 100 + '0');
+					_putchar((y / 100) + '0');
 					_putchar((y / 10 % 10) + '0');
-					_putchar(y % 10 + '0');
 				}
 				else if (x != 0)
 				{
@@ -39,8 +35,8 @@ void print_times_table(int n)
 				else if (y >= 10 && y < 100)
 				{
 					_putchar(' ');
-					_putchar(y / 10 + '0');
-					_putchar(y % 10 + '0');
+					_putchar((y / 10) + '0');
+					_putchar((y % 10) + '0');
 				}
 				else
 				{
