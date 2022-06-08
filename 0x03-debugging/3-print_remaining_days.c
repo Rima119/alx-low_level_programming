@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * print_remaining_days - Fix the function so that the output
- * works correctly for all dates and all leap years
+ * print_remaining_days - Fix the function so the output works correctly for all dates and all leap years
  * @month: month of a year
  * @day: day of a month
  * @year: a year
