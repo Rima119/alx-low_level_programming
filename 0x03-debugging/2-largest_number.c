@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Fix the code 
+ * largest_number - Fix the code 
  * @a: first integer
  * @b: second integer
  * @c: third integer
