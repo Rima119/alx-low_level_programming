@@ -13,7 +13,7 @@ int main(void)
 
 	for (m = 2; m <= x; m++)
 	{
-		if (x % n == 0)
+		if (x % m == 0)
 		{
 			x /= m;
 			m--;
