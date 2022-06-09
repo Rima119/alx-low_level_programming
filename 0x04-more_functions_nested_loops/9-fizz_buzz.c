@@ -23,7 +23,11 @@ int main(void)
 		{
 			printf("FizzBuzz");
 		}
-		else if (n != 100)
+		else
+		{
+			printf("%d", n);
+		}
+		if (n != 100)
 		{
 			putchar(' ');
 		}
