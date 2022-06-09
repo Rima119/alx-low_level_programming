@@ -27,8 +27,11 @@ int main(void)
 		{
 			printf("%d", n);
 		}
+		if (n != 100)
+		{
+			putchar(' ');
+		}
 	}
-	printf("Buzz");
 	printf("\n");
 
 	return (0);
