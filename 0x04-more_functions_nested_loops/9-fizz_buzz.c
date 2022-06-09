@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
+ * Description: Fizz-Buzz test program
  * Return: 0
  */
 
