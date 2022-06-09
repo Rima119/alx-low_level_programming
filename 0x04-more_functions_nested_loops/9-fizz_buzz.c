@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Entry point
@@ -9,29 +8,32 @@
 
 int main(void)
 {
-	int n;
+	int a;
 
-	for (n = 1; n <= 100; n++)
+	for (a = 1; a <= 100; a++)
 	{
-		if (n % 3 == 0)
+		if (a % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (n % 5 == 0)
+		else if (a % 5 == 0)
 		{
-			printf("Buzz ");
+			if (a < 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
-		else if (n % 3 == 0 && n % 5 == 0)
+		else if (a % 3 == 0 && a % 5 == 0)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (n == 1)
-		{
-			printf("%d", n);
-		}
 		else
 		{
-			printf("%d ", n);
+			printf("%d ", a);
 		}
 	}
 	printf("\n");
