@@ -9,15 +9,17 @@
 int main(void)
 {
 	long x = 612852475143;
-	long m;
+	int m;
 
 	for (m = 2; m <= x; m++)
 	{
 		if (x % m == 0)
 		{
-			x = x / m;
+			x /= m;
 			m--;
 		}
 	}
-	printf("%lu\n", m);
+	printf("%d\n", m);
+
+	return (0);
 }
