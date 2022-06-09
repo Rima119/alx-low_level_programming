@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (x % m == 0)
 		{
-			x /= m;
+			x = x / m;
 			m--;
 		}
 	}
