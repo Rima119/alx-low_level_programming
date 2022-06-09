@@ -9,7 +9,7 @@
 int main(void)
 {
 	long x = 612852475143;
-	int m;
+	long m;
 
 	for (m = 2; m <= x; m++)
 	{
@@ -19,5 +19,5 @@ int main(void)
 			m--;
 		}
 	}
-	printf("%lu\n", x);
+	printf("%lu\n", m);
 }
