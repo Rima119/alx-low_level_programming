@@ -10,10 +10,7 @@ int main(void)
 {
 	int a;
 
-	a = 1;
-	printf("%d", a);
-
-	for (a = 2; a <= 100; a++)
+	for (a = 1; a <= 100; a++)
 	{
 		if (a % 3 == 0)
 		{
