@@ -9,7 +9,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	for (; *scr != '\0'; scr++)
+	for (; *src != '\0'; src++)
 	{
 		*dest++ = *src++;
 	}
