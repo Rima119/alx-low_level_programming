@@ -8,6 +8,7 @@
 
 int _atoi(char *s)
 {
+	int n = 0;
 	int p = 1;
 	unsigned int m = 0;
 
@@ -17,12 +18,12 @@ int _atoi(char *s)
 		{
 			p = -1 * p;
 		}
-		*s++;
+		n++;
 	}
 	while (*s <= '9' && (*s >= '0' && *s != '\0'))
 	{
 		m = (m * 10) + (*s - '0');
-		*s++;
+		n++;
 	}
 	
 	return (m * p);
