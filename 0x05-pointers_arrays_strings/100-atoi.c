@@ -25,6 +25,5 @@ int _atoi(char *s)
 		m = (m * 10) + (s[n] - '0');
 		n++;
 	}
-	
 	return (m * p);
 }
