@@ -12,23 +12,23 @@ char *leet(char *p)
 
 	while (p[n] != '\0')
 	{
-		if (p[n] == 'a' || p[n] == 'A')
+		while (p[n] == 'a' || p[n] == 'A')
 		{
 			p[n] = '4';
 		}
-		if (p[n] == 'e' || p[n] == 'E')
+		while (p[n] == 'e' || p[n] == 'E')
 		{
 			p[n] = '3';
 		}
-		if (p[n] == 'o' || p[n] == 'O')
+		while (p[n] == 'o' || p[n] == 'O')
 		{
 			p[n] = '0';
 		}
-		if (p[n] == 't' || p[n] == 'T')
+		while (p[n] == 't' || p[n] == 'T')
 		{
 			p[n] = '7';
 		}
-		if (p[n] == 'l' || p[n] == 'L')
+		while (p[n] == 'l' || p[n] == 'L')
 		{
 			p[n] = '1';
 		}
