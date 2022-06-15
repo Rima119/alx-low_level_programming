@@ -10,8 +10,8 @@ char *leet(char *p)
 {
 	int n;
 	int m = 0;
-	int l[] = "aAeEoOtTlL";
-	int num[] = "4433007711";
+	char l[] = "aAeEoOtTlL";
+	char num[] = "4433007711";
 
 	for (n = 0; p[n] != '\0'; n++)
 	{
