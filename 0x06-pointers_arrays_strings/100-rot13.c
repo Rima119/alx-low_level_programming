@@ -19,7 +19,8 @@ char *rot13(char *p)
 		{
 			if (p[n] == l[m])
 			{
-				p[n] == u[m];
+				p[n] = u[m];
+				break;
 			}
 		}
 	}
