@@ -8,31 +8,21 @@
 
 char *leet(char *p)
 {
-	int n = 0;
+	int n;
+	int m = 0;
+	int l[] = "aAeEoOtTlL";
+	int num[] = "4433007711";
 
-	while (p[n] != '\0')
+	for (n = 0; p[n] != '\0'; n++)
 	{
-		while (p[n] == 'a' || p[n] == 'A')
+		while (m < 10)
 		{
-			p[n] = '4';
+			if (p[n] == l[m])
+			{
+				p[n] == num[m];
+			}
+			m++;
 		}
-		while (p[n] == 'e' || p[n] == 'E')
-		{
-			p[n] = '3';
-		}
-		while (p[n] == 'o' || p[n] == 'O')
-		{
-			p[n] = '0';
-		}
-		while (p[n] == 't' || p[n] == 'T')
-		{
-			p[n] = '7';
-		}
-		while (p[n] == 'l' || p[n] == 'L')
-		{
-			p[n] = '1';
-		}
-		n++;
 	}
 	return (p);
 }
