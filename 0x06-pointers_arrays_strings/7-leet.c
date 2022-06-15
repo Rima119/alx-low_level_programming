@@ -19,7 +19,7 @@ char *leet(char *p)
 		{
 			if (p[n] == l[m])
 			{
-				p[n] == num[m];
+				p[n] = num[m];
 			}
 			m++;
 		}
