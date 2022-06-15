@@ -15,13 +15,12 @@ char *leet(char *p)
 
 	for (n = 0; p[n] != '\0'; n++)
 	{
-		while (m < 10)
+		for (m = 0; m < 10; m++)
 		{
 			if (p[n] == l[m])
 			{
 				p[n] = num[m];
 			}
-			m++;
 		}
 	}
 	return (p);
