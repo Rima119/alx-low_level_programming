@@ -9,15 +9,22 @@ void print_number(int n)
 {
 	unsigned int p;
 
-	while ((n / p) > 9)
+	if (n == 0)
 	{
-		p = p * 10;
+		_putchar('0');
 	}
-	while (p > 0)
+	else
 	{
-		_putchar((n / p) + '0');
-		n = n % p;
-		p = p / 10;
+		while ((n / p) > 9)
+		{
+			p = p * 10;
+		}
+		while (p > 0)
+		{
+			_putchar((n / p) + '0');
+			n = n % p;
+			p = p / 10;
+		}
 	}
 	if (n < 0)
 	{
