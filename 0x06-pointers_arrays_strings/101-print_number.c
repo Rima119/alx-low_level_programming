@@ -7,28 +7,19 @@
 
 void print_number(int n)
 {
-	unsigned int p = n;
+	unsigned int p;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
-	else
-	{
-		while ((n / p) > 9)
-		{
-			p = p * 10;
-		}
-		while (p > 0)
-		{
-			_putchar((n / p) + '0');
-			n = n % p;
-			p = p / 10;
-		}
-	}
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -1 * n;
 	}
+
+	p = n;
+
+	if(p / 10)
+	{
+		print_number(p / 10);
+	}
+	_putchar(p % 10 + '0');
 }
