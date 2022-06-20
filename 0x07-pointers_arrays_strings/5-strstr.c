@@ -10,7 +10,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *n;
-	char *m:
+	char *m;
 
 	while (*haystack)
 	{
