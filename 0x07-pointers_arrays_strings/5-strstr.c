@@ -27,11 +27,12 @@ char *_strstr(char *haystack, char *needle)
 			{
 				break;
 			}
-			if (*m == '\0')
-			{
-				return (n);
-			}
-			n++;
+		}
+		if (*m == '\0')
+		{
+			return (n);
+		}
+		n++;
 	}
 	return (0);
 }
