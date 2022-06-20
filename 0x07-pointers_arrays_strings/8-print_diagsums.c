@@ -10,16 +10,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int n = 0, m = 0, p = 0;
+	int n, m = 0, p = 0;
 
-	for (; n < (size * size);)
+	for (n = 0; n < (size * size); n += size + 1)
 	{
 		m += a[n];
-		n += size + 1;
 	}
-	for (; n < (size * size) - size;)
+	for (n = 0; n < (size * size) - size; n += size - 1)
 	{
-		n += size + 1;
 		p += a[n];
 	}
 	printf("%d, %d\n", m, p);
