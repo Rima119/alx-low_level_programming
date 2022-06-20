@@ -10,7 +10,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack)
 	{
-		while (*haystack = *needle)
+		while (*haystack == *needle)
 		{
 			needle++;
 			haystack++;
