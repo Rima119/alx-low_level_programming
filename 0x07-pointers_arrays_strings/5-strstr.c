@@ -9,10 +9,10 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *n;
-	char *m;
+	char *n = haystack;
+	char *m = needle;
 
-	while (*haystack)
+	while (*n)
 	{
 		n = haystack;
 		m = needle;
@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				return (n);
 			}
-			haystack++;
+			n++;
 	}
 	return (0);
 }
