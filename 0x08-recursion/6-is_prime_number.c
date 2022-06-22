@@ -23,7 +23,7 @@ int prime(int n, int r)
 	{
 		return (0);
 	}
-	return (prime(n, i + 1));
+	return (prime(n, r + 1));
 }
 
 /**
@@ -32,6 +32,7 @@ int prime(int n, int r)
  * @n: number
  * Return: 1 if the input integer is a prime number, otherwise return 0
  */
+
 int is_prime_number(int n)
 {
 	return (prime(n, 0));
