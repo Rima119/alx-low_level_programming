@@ -19,7 +19,7 @@ int _recursion(int n, int r)
 	{
 		return (r);
 	}
-	return (numb(n, r + 1));
+	return (_recursion(n, r + 1));
 }
 
 /**
