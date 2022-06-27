@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *m;
-	int n = 0, p = 0;
+	int n = 0, p = 0, x;
 
 	if (s1 == NULL)
 	{
@@ -32,6 +32,7 @@ char *str_concat(char *s1, char *s2)
 	m = malloc(sizeof(char) * (n + p + 1));
 	if (m == NULL)
 	{
+		free(m);
 		return (NULL);
 	}
 	while (s1[n] != '\0')
@@ -42,8 +43,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[p] != '\0')
 	{
 		m[n] = s2[p];
-		n++;
-		p++;
+		n++, p++;
 	}
 	m[n] = '\0';
 	return (m);
