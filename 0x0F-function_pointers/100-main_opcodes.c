@@ -23,8 +23,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	return (0);
-
 	while (n < (atoi(argv[1])))
 	{
 		printf("%02x", m[n] & 0xFF);
@@ -35,4 +33,6 @@ int main(int argc, char *argv[])
 		n++;
 	}
 	printf("\n");
+
+	return (0);
 }
