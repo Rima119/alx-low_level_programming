@@ -10,6 +10,9 @@
 
 int main(int argc, char *argv[])
 {
+	char *m = (char *) main;
+	int n = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -21,4 +24,15 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	return (0);
+
+	while (n < (atoi(argv[1])))
+	{
+		printf("%02x", m[n] & 0xFF);
+		if (n != atoi(argv[1]) - 1)
+		{
+			printf(" ");
+		}
+		n++;
+	}
+	printf("\n");
 }
