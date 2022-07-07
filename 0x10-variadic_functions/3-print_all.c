@@ -63,7 +63,8 @@ void print_all(const char * const format, ...)
 		{"c", pr_char},
 		{"i", pr_integer},
 		{"f", pr_float},
-		{"s", pr_string}
+		{"s", pr_string},
+		{NULL, NULL}
 	};
 
 	va_start(a, format);
