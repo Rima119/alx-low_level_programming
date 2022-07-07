@@ -13,5 +13,9 @@ typedef struct pristr
 	char *m;
 	void (*pr)(va_list v);
 } pristr_t;
+void pr_char(va_list v);
+void pr_integer(va_list v);
+void pr_float(va_list v);
+void pr_string(va_list v);
 
 #endif
