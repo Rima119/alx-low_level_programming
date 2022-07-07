@@ -56,10 +56,10 @@ void pr_string(va_list v)
 void print_all(const char * const format, ...)
 {
 	char *r = "";
-	int n = 0, m = 0;
+	int n = 0, s = 0;
 	va_list a;
 
-	pristr_t pr[] = {
+	pristr_t prt[] = {
 		{"c", pr_char},
 		{"i", pr_integer},
 		{"f", pr_float},
@@ -69,16 +69,16 @@ void print_all(const char * const format, ...)
 	va_start(a, format);
 	while (format[n] != '\0' && format != NULL)
 	{
-		m = 0;
-		while (m < 4)
+		s = 0;
+		while (s < 4)
 		{
-			if (format[n] == pr[m].t)
+			if (format[n] == *(prt[s].m))
 			{
 				printf("%s", r);
-				pr[m].print(a);
+				prt[s].pr(a);
 				r = ", ";
 			}
-			m++;
+			s++;
 		}
 		n++;
 	}
