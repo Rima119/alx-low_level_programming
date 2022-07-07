@@ -56,7 +56,7 @@ void pr_string(va_list v)
 void print_all(const char * const format, ...)
 {
 	char *r = "";
-	int n = 0, s = 0;
+	int n = 0, s = 0, p = 0;
 	va_list a;
 
 	pristr_t prt[] = {
@@ -73,11 +73,13 @@ void print_all(const char * const format, ...)
 		s = 0;
 		while (s < 4)
 		{
-			if (format[n] == *(prt[s].m))
+			if (format[n] == prt[s].m)
 			{
 				printf("%s", r);
 				prt[s].pr(a);
 				r = ", ";
+				p++;
+				break;
 			}
 			s++;
 		}
