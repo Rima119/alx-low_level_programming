@@ -38,8 +38,9 @@ void pr_float(va_list v)
 
 void pr_string(va_list v)
 {
-	char *a = va_arg(v, char *);
-
+	char *a;
+	
+	a = va_arg(v, char *);
 	if (a == NULL)
 	{
 		a = "(nil)";
@@ -73,9 +74,10 @@ void print_all(const char * const format, ...)
 		m = 0;
 		while (m < 4)
 		{
-			if (format[n] == *(pr[m]).pr)
+			if (format[n] == pr[m].t)
 			{
-				pr[m].p(a, r);
+				printf("%s", r);
+				pr[m].f(a);
 				r = ", ";
 			}
 			m++;
