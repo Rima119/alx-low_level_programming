@@ -73,7 +73,7 @@ void print_all(const char * const format, ...)
 		s = 0;
 		while (s < 4)
 		{
-			if (format[n] == prt[s].m)
+			if (format[n] == *(prt[s].m))
 			{
 				printf("%s", r);
 				prt[s].pr(a);
