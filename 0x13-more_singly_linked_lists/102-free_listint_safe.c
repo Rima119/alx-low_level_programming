@@ -11,19 +11,19 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *m;
 	size_t a = 0;
 
-	m = *h;
-	while (m != NULL)
+	while (*h != NULL)
 	{
 		a += 1;
-		if (m > m->next)
+		if (*h > (*h)->next)
 		{
-			m = m->next;
+			m = *h;
+			*h = *h->next;
 			free(m);
 		}
 		else
 		{
-			free(m);
-			m = NULL;
+			free(*h);
+			*h = NULL;
 		}
 	}
 	*h = NULL;
