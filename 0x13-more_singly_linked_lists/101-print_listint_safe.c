@@ -11,7 +11,7 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *m, *b;
 	size_t p = 0;
 
-	m = *head;
+	m = head;
 	if (m == NULL)
 	{
 		exit(98);
