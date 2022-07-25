@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	m = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (m == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	while (p != 0)
