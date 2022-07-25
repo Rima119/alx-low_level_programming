@@ -23,17 +23,23 @@ int main(int argc, char *argv[])
 	m = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (m == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+	p = read(n, s, 1024);
+	if (p == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	while (p != 0)
 	{
+		d = write(m, s, p);
+		if (d == -1)
+			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]), exit(99);
 		p = read(n, s, 1024);
 		if (p == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-		d = write(m, s, p);
-		if (d == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]), exit(99);
 	}
 	p = close(n);
 	if (p == -1)
