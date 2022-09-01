@@ -19,7 +19,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	wnode->n = n;
 	wnode->next = NULL;
-	if (head != NULL)
+	if (*head != NULL)
 	{
 		m = *head;
 		while (m->next != NULL)
