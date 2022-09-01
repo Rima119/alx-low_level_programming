@@ -10,7 +10,7 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *tmp, *wnode;
+	dlistint_t *tmp, *wnode, *m;
 	unsigned int p = 0;
 
 	wnode = malloc(sizeof(dlistint_t));
@@ -33,9 +33,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			return (wnode);
 		}
 		p++;
+		m = tmp;
 		tmp = tmp->next;
 	}
-	if (tmp->next == NULL)
-		return (add_dnodeint_end(h, n));
+	if (p == idx)
+	{
+		m->next = wnode;
+		wnode->prev = m;
+		return (wnode);
+	}
+	free(wnode);
 	return (NULL);
 }
