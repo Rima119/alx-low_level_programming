@@ -30,7 +30,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	tmp = *h;
 	while (tmp != NULL)
 	{
-		if (p == idx)
+		if (p == idx && idx != 0)
 		{
 			tmp->prev->next = wnode;
 			wnode->prev = tmp->prev;
