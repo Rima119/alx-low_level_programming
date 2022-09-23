@@ -11,7 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int n;
 
 	if (ht == NULL)
-		return
+		return;
 
 	if (ht != NULL)
 	{
