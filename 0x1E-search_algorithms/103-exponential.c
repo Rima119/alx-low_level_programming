@@ -3,7 +3,7 @@
 /**
  * bn_search - searches for a value in a sorted array of integers using the
  * Binary search algorithm
- * array: pointer to the first element of the array to search in
+ * @array: pointer to the first element of the array to search in
  * @low: start index of the array to search in
  * @high: end index of the array to search in
  * @value: the value to search for
@@ -21,7 +21,7 @@ int bn_search(int *array, size_t low, size_t high, int value)
 		for (i = low; i < high; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
-		
+
 		i = low + (high - low) / 2;
 		if (array[i] == value)
 			return (i);
@@ -44,7 +44,7 @@ int bn_search(int *array, size_t low, size_t high, int value)
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t i = 0, low, high;
-	
+
 	if (array == NULL)
 		return (-1);
 	if (array[0] != value)
